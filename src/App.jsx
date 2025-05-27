@@ -11,7 +11,7 @@ import Skill from "./components/SkillSection";
 import Experience from "./components/Experience";
 import "./style.css";
 import Footer from "./components/Footer";
-import Academic from "./components/institution";
+import Academic from "./components/Academic";
 
 function App() {
   return (
