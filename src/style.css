@@ -19,230 +19,141 @@
   width: 100%;
   left: 0;
 }
-
-/* Button Styling */
-.btn-outline-light {
-  padding: 8px 16px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-outline-light:hover {
-  color: #0f0f0f;
-  transform: translateY(-5px);
-}
-
-/* Button Gradient Effect */
-.bg-gradient-primary {
-  background: linear-gradient(45deg, #198754, #00c851);
-}
-
-.bg-gradient-primary:hover {
-  background: linear-gradient(45deg, #00c851, #198754);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Animated Zoom In Effect */
-.animate__animated.animate__zoomIn.animate__infinite {
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.icon {
-  display: flex;
-  gap: 10px;
-}
-.icon a {
-  color: #e4e6eb;
-  font-size: 1.2rem;
-  transition: transform 0.3s, color 0.3s;
-}
-.icon a:hover {
-  transform: scale(1.1);
-  color: #198754;
-
-}
-
-/* Button Styling */
-.btn-outline-light {
-  padding: 8px 16px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-outline-light:hover {
-  color: #0f0f0f;
-  transform: translateY(-5px);
-}
-
-/* Button Gradient Effect */
-.bg-gradient-primary {
-  background: linear-gradient(45deg, #198754, #00c851);
-}
-
-.bg-gradient-primary:hover {
-  background: linear-gradient(45deg, #00c851, #198754);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Animated Zoom In Effect */
-.animate__animated.animate__zoomIn.animate__infinite {
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.icon {
-  display: flex;
-  gap: 10px;
-}
-.icon a {
-  color: #e4e6eb;
-  font-size: 1.2rem;
-  transition: transform 0.3s, color 0.3s;
-}
-.icon a:hover {
-  transform: scale(1.1);
-  color: #198754;
-
-}
-.right-padd a {
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
-.right-padd a:hover {
-  background-color: #0d6efd;
-  transform: scale(1.05);
-}
-@media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-  }
-  .icon {
-    justify-content: center;
-  }
-  .right-padd {
-    text-align: center;
-    margin-top: 10px;
-  }
-}
-/* hero section */
-h3 {
-  color: #198754;
-  font-style: italic;
-}
-
-.name {
-  color: #8a5f10;
-}
-
-.web_developer {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.verify {
-  width: 24px;
-  height: 24px;
-  margin-left: 8px;
-  vertical-align: middle;
-}
-
-/* Image Styles */
-.dp {
-  max-height: 600px;
-  width: auto;
-}
-.cover-photo{
-  animation: bounce s infinite;
-
-}
-
-
-/* Responsive Typography */
-.top h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-  .top h1 {
-    font-size: 2.5rem;
-  }
-
-  .web_developer {
-    font-size: 1.5rem;
-  }
-
-  .dp {
-    max-height: 400px;
-  }
-
-  .down .btn {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .top h1 {
-    font-size: 2rem;
-  }
-
-  .web_developer {
-    font-size: 1.2rem;
-  }
-
-  .dp {
-    max-height: 400px;
-  }
-
-  .down .btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  .top h1 {
-    font-size: 1.8rem;
-  }
-
-  .text-animation h3 {
-    font-size: 1.2rem;
-  }
-
-  .web_developer {
-    font-size: 1rem;
-  }
-
-  .dp {
-    max-height: 400px;
-  }
-
-  .down .btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-}
-h4{
-color: #eadfdf;
-}
-.custom-text{
-color: #eadfdf;
-}
+/* text styling */
 .text-primary{
-  color: #198754;
+  color: #198654;
 }
 .text-primary:hover{
-  color: #888C94;
+  color: #c2ccc8;
 }
+/* Primary text color */
+.text-secondary {
+  color: #c2ccc8; /* Soft gray-green for eye comfort */
+}
+
+
+/* Background color */
+.bg-primary{
+  background-color: #172130;
+}
+.bg-secondary{
+  background-color: #303948;
+}
+/* Custom Shadow */
+ .custom-Shadow {
+  box-shadow: 0 10px 15px -3px rgba(52, 211, 153, 0.4),0 4px 6px -4px rgba(52, 211, 153, 0.4);
+  transition: box-shadow 300ms ease;
+}
+
+.custom-Shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.6),0 4px 6px -4px rgba(16, 185, 129, 0.6);
+}
+/* Button Styling */
+.btn-bs-success {
+border: 1px solid #198654;
+  color: #198654;
+}
+.btn-bs-success:hover {
+  background-color: #198654;
+  color: white;
+}
+
+
+.btn-outline-light {
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+  color: #0f0f0f;
+  transform: translateY(-5px);
+}
+
+/* Button Gradient Effect */
+.bg-gradient-primary {
+  background: linear-gradient(45deg, #198754, #00c851);
+}
+
+.bg-gradient-primary:hover {
+  background: linear-gradient(45deg, #00c851, #198754);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated Zoom In Effect */
+.animate__animated.animate__zoomIn.animate__infinite {
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Section styling ----=====-----*/
+.section-title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #dde1e8;
+}
+.section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: rgb(7, 185, 126);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+
+/* Image Circling Animation */
+.rounding-image {
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.rounding-image:hover {
+  transform: scale(1.1);
+}
+.rounding-container:hover .rounding-image {
+  transform: rotate(360deg);
+}
+
+/* Advanced Circle Design */
+.circle-design {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #007bff, #6c757d);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.circle-design:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+/* Button Styling */
 
 /* About Section */
