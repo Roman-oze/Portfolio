@@ -51,7 +51,7 @@ export default function ProjectList() {
           {" "}
           Project <span className="text-[#198654]">Showcase</span>
         </h1>
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 mt-12">
           {projects.map((project) => (
             <div
               key={project.id}
