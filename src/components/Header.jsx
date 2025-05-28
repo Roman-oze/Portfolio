@@ -6,9 +6,13 @@ export default function Header() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(15, 15, 15, 0.98)] backdrop-blur-md border-b border-white/10 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <a href="#" className="flex items-center">
-          <img src={logo} alt="Logo" className="logo" />
-        </a>
+ <a href="#" className="flex items-center">
+      <img
+        src={logo}
+        alt="Logo"
+        className="bouncing"
+      />
+    </a>
 
         {/* Toggle Button */}
         <button
@@ -51,13 +55,13 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/Roman-oze"
-                className="inline-flex items-center px-4 py-2 btn-bs-success transition-all duration-300 rounded group"
+                className="inline-flex items-center px-4 py-2 btn-bs-success  transition-all duration-300 rounded group bouncing"
               >
-                <span className="font-semibold">Hire Me</span>
+                <span className="font-semibold text-white/80">Hire Me</span>
 
                 {/* Open Eye (default) */}
                 <svg
-                  className="w-5 h-5 text-white ml-2 block group-hover:hidden"
+                  className="w-5 h-5 text-white/70 ml-2 block group-hover:hidden"
                   fill="currentColor"
                   viewBox="0 0 576 512"
                   xmlns="http://www.w3.org/2000/svg"

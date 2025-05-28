@@ -1,9 +1,22 @@
 
 
-.logo {
+
+
+.bouncing {
   max-height: 50px;
-  animation: bounce 2s infinite;
+  animation: bounceSmooth 2s ease-in-out infinite;
 }
+
+@keyframes bounceSmooth {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
 
 .nav-link::before {
   content: "";
