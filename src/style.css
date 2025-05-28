@@ -1,5 +1,7 @@
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 .bouncing {
@@ -15,6 +17,8 @@
     transform: translateY(-10px);
   }
 }
+/* card Shadow */
+/* styles.css or your component CSS file */
 
 
 

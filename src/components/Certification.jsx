@@ -5,7 +5,7 @@ import vp from "../assets/image/vp.jpg";
 import leadership from "../assets/image/leadership.png";
 import positivity from "../assets/image/positivity.png";
 import ChineseLang from "../assets/image/ChineseLang.jpg";
-import LogosMarquee from "./Feature";
+import LogosMarquee from "./LogoMarquee";
 
 const certificates = [
   {
@@ -68,11 +68,11 @@ const CertificateSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {certificates.map(({ id, title, image, description, issued }) => (
             <div
               key={id}
-              className="bg-secondary rounded-3xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+              className="bg-secondary rounded-3xl  overflow-hidden transform transition duration-300 hover:scale-105  cursor-pointer shadow-xl hover:shadow-teal-500/40 transition-all duration-300"
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
@@ -123,7 +123,7 @@ const CertificateSection = () => {
       )}
 
       {/* import LogosMarquee  */}
-      <div className="mt-30">
+      <div className="mt-30 bg-secondary">
         <LogosMarquee />
       </div>
     </section>

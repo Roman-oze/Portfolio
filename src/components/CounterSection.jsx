@@ -21,7 +21,7 @@ export default function CounterSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-primary backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg hover:shadow-green-500/30 transition-transform hover:-translate-y-2"
+              className="bg-primary backdrop-blur-md border border-white/10 p-8 rounded-2xl  transition-transform hover:-translate-y-2 shadow-xl hover:shadow-teal-500/40 transition-all duration-300"
             >
               <div className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400 mb-2">
                 <CountUp end={stat.end} duration={2} />

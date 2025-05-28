@@ -46,7 +46,7 @@ export default function Academic() {
         {academicInfo.map(({id ,icon , level ,institute , description,cgpa }) => (
           <div
             key={id}
-            className="bg-secondary backdrop-blur-md p-6 rounded-2xl shadow-md border border-white/10 transition-transform duration-300 ease-in-out hover:scale-105 shadow-md"
+            className="bg-secondary backdrop-blur-md p-6 rounded-2xl border border-white/10 transition-transform duration-300 ease-in-out hover:scale-105 shadow-xl hover:shadow-teal-500/40 transition-all duration-300"
           >
             <div className="flex flex-col items-center text-center">
               <div className="mb-3">{icon}</div>

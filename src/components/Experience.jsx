@@ -35,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white overflow-hidden">
+    <section className="bg-primary relative py-20  text-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-10 bg-noise" />
 
       <div className="text-center mb-16 px-4 section-title">
@@ -47,11 +47,11 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-6 ">
         {experiences.map(({ id ,title, description, icon }) => (
           <div
             key={id}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-white/10"
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center transform hover:-translate-y-2 hover:bg-white/10 shadow-xl hover:shadow-teal-500/40 transition-all duration-300"
           >
             <div className="flex justify-center mb-5 rounding-container">
               <div className="bg-white/10 p-4 rounded-full rounding-image">

@@ -6,27 +6,38 @@ export default function Header() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(15, 15, 15, 0.98)] backdrop-blur-md border-b border-white/10 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
- <a href="#" className="flex items-center">
-      <img
-        src={logo}
-        alt="Logo"
-        className="bouncing"
-      />
-    </a>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Logo" className="bouncing" />
+        </a>
 
         {/* Toggle Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-green-600 border border-green-600 p-2 text-white rounded-md md:hidden"
+          className="text-primary border border-[#198654] p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-300 md:hidden"
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
         >
-          <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path d="M4 5h16M4 12h16M4 19h16" />
+          {/* Hamburger Icon */}
+          <svg
+            className="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
 
         {/* Links */}
         <div
-          className={`w-full md:flex md:items-center md:w-auto ${
+          id="mobile-menu"
+          className={`w-full md:flex md:items-center md:w-auto transition-all duration-300 ease-in-out ${
             isOpen ? "block" : "hidden"
           }`}
         >
@@ -36,7 +47,6 @@ export default function Header() {
               "Profile",
               "Academic",
               "Certificate",
-              "Achievement",
               "Skill",
               "Contact",
             ].map((item) => (
@@ -50,7 +60,7 @@ export default function Header() {
               </li>
             ))}
 
-            <li className="mt-4 md:mt-0">
+            <li className="mt-4 md:mt-0 w-auto">
               <a
                 target="_blank"
                 rel="noopener noreferrer"

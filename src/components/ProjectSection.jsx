@@ -223,11 +223,11 @@ export default function ProjectList() {
         <h1 className="text-4xl font-bold mb-12 text-white">
           Project <span className="text-[#198654]">Showcase</span>
         </h1>
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
+        <div className="grid md:grid-cols-2 gap-10 mt-12 ">
           {projects.map((project, id) => (
             <div
               key={project.id}
-              className="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 bg-gradient-to-tr from-[#1a1f2e] to-[#2e3a59]"
+              className="relative group overflow-hidden rounded-2xl bg-secondary shadow-xl hover:shadow-teal-500/40 transition-all duration-300"
             >
               {(id === 0 || id === projects.length - 1) && (
                 <div className="absolute top-3 left-3 z-10 px-3 py-1 flex items-center gap-1 text-xs font-semibold text-white backdrop-blur-md bg-white/10 border border-white/20 rounded-full shadow-lg ring-1 ring-green-400/40">

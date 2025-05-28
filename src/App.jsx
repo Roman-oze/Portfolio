@@ -2,7 +2,6 @@ import AboutMe from "./components/AboutSection";
 import CertificateSection from "./components/Certification";
 import CounterSection from "./components/CounterSection";
 import Expertise from "./components/Expertise";
-import LogosMarquee from "./components/Feature";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProjectList from "./components/ProjectSection";

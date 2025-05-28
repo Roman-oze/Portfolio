@@ -46,7 +46,7 @@ export default function Skill() {
           {skillList.map(({ id, title, description, image }) => (
             <div
               key={id}
-              className="bg-white/10 mt-6 text-white rounded-2xl  p-6 transform hover:scale-105 transition-transform duration-300 shadow-md "
+              className="bg-white/10 mt-6 text-white rounded-2xl  p-6 transform hover:scale-105  shadow-xl hover:shadow-teal-500/40 transition-all duration-300 "
             >
               <div className="flex justify-center mb-5 rounding-container ">
                 <img

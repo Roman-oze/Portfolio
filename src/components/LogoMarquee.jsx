@@ -11,7 +11,7 @@ const LogosMarquee = () => {
 
   return (
     <>
-    <div className="relative overflow-hidden bg-white py-3 ">
+    <div className="bg-secondary relative overflow-hidden py-3 ">
       {/* Inline animation style */}
       <style>
         {`
