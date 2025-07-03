@@ -4,6 +4,8 @@ import logo from "../assets/image/portfolio-logo-02.png";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
+<>
+
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(15, 15, 15, 0.98)] backdrop-blur-md border-b border-white/10 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a href="#" className="flex items-center">
@@ -94,5 +96,6 @@ export default function Header() {
         </div>
       </div>
     </nav>
+    </>
   );
 }
