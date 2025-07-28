@@ -25,9 +25,9 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <Expertise />
-      <Skill />
-      <AboutMe />
+      <Expertise title= "Expertise"/>
+      <Skill title = "Academic Skills"/>
+      <AboutMe title = "About Me" />
       <Academic />
       <CounterSection />
       <SkillsProgress />
